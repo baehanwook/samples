@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sample.service.mapper.MemberMapper">
+	<select id="create" parameterType="com.example.sample.model.MemberVO" resultType="com.example.sample.model.MemberVO">
+		insert into TBL_MEMBER (userid, userpw, username, email)
+		values (#{userid}, #{userpw}, #{username}, #{email})
+	</select>
+</mapper>    
